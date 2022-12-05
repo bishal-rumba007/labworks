@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:lab_two/home_page.dart';
-import 'lab_works/question1/student.dart';
+import 'package:lab_two/view/buttonwidget.dart';
+import 'package:lab_two/view/columndemo.dart';
+import 'package:lab_two/view/containerwidget.dart';
+import 'package:lab_two/view/imagewidget_demo.dart';
+import 'package:lab_two/view/listview.dart';
+import 'package:lab_two/view/rowdemo.dart';
 
-
-
-void main(){
-
-  Student  student1 = Student();
-  student1.name = 'Bisal';
-  student1.roll_no = 23;
-
-  print('$student1.name, $student1.roll_no');
-
+void main() {
   runApp(const Home());
 }
 
@@ -20,8 +15,9 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ImageWidgetDemo(),
     );
   }
 }
